@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo "$0"
-echo "$1"
+echo zero "$0"
+echo first "$1"
 # echo "${node.name}"
