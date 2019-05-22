@@ -1,2 +1,2 @@
-# cccnp-script-test
-Test Repo for fetching scripts via Git-Sync
+# cccnp-sandbox-operations
+Rundeck Sandbox Operation Scripts
