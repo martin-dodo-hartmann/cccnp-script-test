@@ -5,4 +5,4 @@ echo node-realm: "$2"
 echo node-instance: "$3"
 echo command: "$4"
 
-return 0
+exit 0
