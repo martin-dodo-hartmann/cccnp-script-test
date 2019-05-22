@@ -72,7 +72,7 @@ while read -r line; do
         "id": "'"${metadata_labels_id}"'",
         "type": "'"${metadata_labels_type}"'",
         "node-executor": "script-exec",
-        "script-exec": "bash /home/rundeck/etc/scripts/git-sync/operations/echo.sh ${node.nodename} ${exec.command}",
+        "script-exec": "bash /home/rundeck/etc/scripts/git-sync/operations/echo.sh ${node.type} ${node.realm} ${node.instance} ${exec.command}",
         "tags": "'"${metadata_labels_type}"','"${metadata_labels_realm}"'"
     },'
 done <<< "$instances"
