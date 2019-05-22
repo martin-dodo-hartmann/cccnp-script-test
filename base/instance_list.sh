@@ -72,6 +72,7 @@ while read -r line; do
         "id": "'"${metadata_labels_id}"'",
         "type": "'"${metadata_labels_type}"'",
         "node-executor": "script-exec",
+        "script-exec": "echo foo",
         "tags": "'"${metadata_labels_type}"','"${metadata_labels_realm}"'"
     },'
 done <<< "$instances"
