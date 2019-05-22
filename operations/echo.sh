@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-echo nodename "$1"
-echo command "$2"
+echo node-type: "$1"
+echo node-realm: "$2"
+echo node-instance: "$3"
+echo command: "$4"
