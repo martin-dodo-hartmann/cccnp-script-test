@@ -3,6 +3,9 @@
 # RESTART script, requires instanceUUID and component (web/tomcat)
 
 whoami
+echo "EVN..."
+env
+echo "DONE!"
 
 export ID=$1
 export COMPONENT=$2
