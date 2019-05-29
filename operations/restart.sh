@@ -2,6 +2,8 @@
 
 # RESTART script, requires instanceUUID and component (web/tomcat)
 
+whoami
+
 export ID=$1
 export COMPONENT=$2
 
