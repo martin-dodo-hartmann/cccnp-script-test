@@ -19,8 +19,7 @@ echo command: "$command"
 cd $(dirname $0)
 
 # Set required environment variables
-additionalEnvVars=$(cat /home/rundeck/etc/context/env.properties)
-
+additionalEnvVars=$(cat /home/rundeck/server/data/env.properties)
 while read line; do
     export $line
 done <<< "$additionalEnvVars"
