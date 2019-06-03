@@ -18,6 +18,13 @@ echo command: "$command"
 
 cd $(dirname $0)
 
+# Set required environment variables
+additionalEnvVars=$(cat /home/rundeck/etc/scripts/env.properties)
+
+while read line; do
+    export $line
+done <<< "$additionalEnvVars"
+
 # Check RESTART
 if [[ -z "${command##*restart*}" ]]; then
   if [[ -z "${command##*tomcat*}" ]]; then
