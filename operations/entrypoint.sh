@@ -18,6 +18,8 @@ echo command: "$command"
 
 cd $(dirname $0)
 
+echo "Lambda 1"
+
 # Set required environment variables
 additionalEnvVars=$(cat /home/rundeck/server/data/env.properties)
 while read line; do
